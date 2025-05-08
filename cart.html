@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart | ElegantSparkle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="diamond-loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header sticky">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ElegantSparkle">
+                <span>ElegantSparkle</span>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Your Shopping Cart</h1>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h3>Your Items (3)</h3>
+                        <button class="btn btn-text continue-shopping"><i class="fas fa-chevron-left"></i> Continue Shopping</button>
+                    </div>
+                    <div class="cart-table">
+                        <div class="cart-table-header">
+                            <div class="cart-col product">Product</div>
+                            <div class="cart-col price">Price</div>
+                            <div class="cart-col quantity">Quantity</div>
+                            <div class="cart-col total">Total</div>
+                            <div class="cart-col action">Action</div>
+                        </div>
+                        <div class="cart-table-body">
+                            <!-- Cart items will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-summary glassmorphism">
+                    <h3>Order Summary</h3>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span class="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span class="shipping">Calculated at checkout</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span class="tax">Calculated at checkout</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Estimated Total</span>
+                            <span class="estimated-total">$0.00</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-gold checkout-btn ripple">Proceed to Checkout</button>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                    <div class="coupon-code">
+                        <input type="text" placeholder="Enter coupon code">
+                        <button class="btn btn-outline-gold apply-coupon">Apply</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-empty">
+                <div class="empty-content">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Your cart is empty</h3>
+                    <p>Looks like you haven't added any items to your cart yet.</p>
+                    <a href="products.html" class="btn btn-gold ripple">Start Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Viewed -->
+    <section class="recently-viewed">
+        <div class="container">
+            <h3 class="section-title">Recently Viewed</h3>
+            <div class="recently-viewed-grid">
+                <!-- Recently viewed items will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same as index.html -->
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

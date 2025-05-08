@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | ElegantSparkle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="diamond-loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header sticky">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ElegantSparkle">
+                <span>ElegantSparkle</span>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Details -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-details-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="images/products/product1.jpg" alt="Diamond Ring" id="main-product-img">
+                    </div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail active">
+                            <img src="images/products/product1.jpg" alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/products/product1-2.jpg" alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/products/product1-3.jpg" alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/products/product1-4.jpg" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Eternity Diamond Ring</h1>
+                    <div class="product-meta">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="review-count">(42 reviews)</span>
+                        </div>
+                        <div class="sku">SKU: ES-DR-001</div>
+                        <div class="availability">In Stock</div>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$1,299.00</span>
+                        <span class="original-price">$1,599.00</span>
+                        <span class="discount">19% off</span>
+                    </div>
+                    <div class="product-description">
+                        <p>This stunning eternity ring features a continuous line of sparkling diamonds set in 18k white gold. Each diamond is hand-selected for its exceptional brilliance and clarity, creating a piece that radiates elegance and sophistication.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-gem"></i> 1.5 carat total diamond weight</li>
+                            <li><i class="fas fa-ruler-combined"></i> Band width: 2.5mm</li>
+                            <li><i class="fas fa-weight"></i> Metal: 18k white gold</li>
+                            <li><i class="fas fa-award"></i> GIA certified diamonds</li>
+                        </ul>
+                    </div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="">Select size</option>
+                                <option value="5">Size 5</option>
+                                <option value="6">Size 6</option>
+                                <option value="7">Size 7</option>
+                                <option value="8">Size 8</option>
+                                <option value="9">Size 9</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-gold add-to-cart ripple">Add to Cart</button>
+                        <button class="btn btn-outline-gold wishlist ripple"><i class="far fa-heart"></i> Wishlist</button>
+                    </div>
+                    <div class="product-share">
+                        <span>Share:</span>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-tabs">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="details">Details</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                </div>
+                <div class="tab-content active" id="description">
+                    <h3>Product Description</h3>
+                    <p>The Eternity Diamond Ring is a timeless symbol of everlasting love and commitment. Crafted by our master jewelers, this ring features a flawless row of brilliant-cut diamonds that encircle the entire band, creating an endless sparkle.</p>
+                    <p>Each diamond is meticulously set in a secure four-prong setting to maximize light reflection and ensure durability. The 18k white gold band has a polished finish that complements the diamonds' brilliance.</p>
+                    <p>Perfect for anniversaries, engagements, or as a special gift, this ring comes with a premium velvet presentation box and a lifetime warranty on craftsmanship.</p>
+                </div>
+                <div class="tab-content" id="details">
+                    <h3>Product Details</h3>
+                    <table class="details-table">
+                        <tr>
+                            <th>Material</th>
+                            <td>18k white gold (also available in yellow or rose gold)</td>
+                        </tr>
+                        <tr>
+                            <th>Diamonds</th>
+                            <td>25 round brilliant-cut diamonds, G-H color, VS clarity</td>
+                        </tr>
+                        <tr>
+                            <th>Total Carat Weight</th>
+                            <td>1.5 carats</td>
+                        </tr>
+                        <tr>
+                            <th>Width</th>
+                            <td>2.5mm</td>
+                        </tr>
+                        <tr>
+                            <th>Certification</th>
+                            <td>GIA certified</td>
+                        </tr>
+                        <tr>
+                            <th>Origin</th>
+                            <td>Responsibly sourced materials</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-content" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <div class="average">4.7</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="total-reviews">Based on 42 reviews</div>
+                        </div>
+                        <div class="rating-bars">
+                            <div class="rating-bar">
+                                <span>5 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 75%;"></div>
+                                </div>
+                                <span>75%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 15%;"></div>
+                                </div>
+                                <span>15%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 7%;"></div>
+                                </div>
+                                <span>7%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 2%;"></div>
+                                </div>
+                                <span>2%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1 star</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 1%;"></div>
+                                </div>
+                                <span>1%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-list">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="reviewer">Jennifer L.</div>
+                                <div class="review-date">May 15, 2024</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-title">Absolutely Stunning!</div>
+                            <div class="review-content">
+                                <p>I purchased this ring for my 10th anniversary and it's even more beautiful in person. The diamonds sparkle brilliantly and the craftsmanship is exceptional. My husband was very impressed with the quality.</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="reviewer">Michael T.</div>
+                                <div class="review-date">April 2, 2025</div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="review-title">Beautiful but runs small</div>
+                            <div class="review-content">
+                                <p>The ring is gorgeous and the diamonds are high quality. However, it runs about half a size small. I would recommend sizing up if you're between sizes. Customer service was excellent in helping me exchange it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-gold load-more-reviews">Load More Reviews</button>
+                    <div class="write-review">
+                        <h4>Write a Review</h4>
+                        <form class="review-form">
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <div class="rating-input">
+                                    <input type="radio" name="rating" id="star5" value="5"><label for="star5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star4" value="4"><label for="star4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star3" value="3"><label for="star3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star2" value="2"><label for="star2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" name="rating" id="star1" value="1"><label for="star1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-title">Review Title</label>
+                                <input type="text" id="review-title" placeholder="Summarize your review">
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Your Review</label>
+                                <textarea id="review-text" rows="5" placeholder="Tell us about your experience with this product"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewer-name">Your Name</label>
+                                <input type="text" id="reviewer-name" placeholder="Enter your name">
+                            </div>
+                            <button type="submit" class="btn btn-gold">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-content" id="shipping">
+                    <h3>Shipping & Returns</h3>
+                    <h4>Shipping Policy</h4>
+                    <p>We offer free standard shipping on all orders over $500. For orders under $500, standard shipping is $15. Expedited shipping options are available at checkout.</p>
+                    <p>Processing time: 1-2 business days</p>
+                    <p>Shipping time: 3-5 business days for standard shipping, 1-2 business days for expedited shipping</p>
+                    <p>We ship to all 50 U.S. states and internationally. International shipping rates and times vary by destination.</p>
+                    
+                    <h4>Returns & Exchanges</h4>
+                    <p>We offer a 30-day return policy from the date of delivery. Items must be in their original condition with all tags and packaging intact.</p>
+                    <p>To initiate a return, please contact our customer service team at returns@elegantsparkle.com with your order number and reason for return.</p>
+                    <p>Refunds will be processed within 5-7 business days after we receive and inspect the returned item. Shipping costs are non-refundable.</p>
+                    <p>For exchanges, please indicate the desired replacement item in your return request. We'll ship the new item once we receive your return.</p>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h3>You May Also Like</h3>
+                <div class="related-products-grid">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same as index.html -->
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElegantSparkle - Luxury Jewelry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="diamond-loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header sticky">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="ElegantSparkle">
+                <span>ElegantSparkle</span>
+            </a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/hero-1.jpg');">
+                <div class="slide-content">
+                    <h1 class="slide-title">Timeless Elegance</h1>
+                    <p class="slide-text">Discover our exquisite collection of handcrafted jewelry</p>
+                    <a href="products.html" class="btn btn-gold ripple">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero-2.jpg');">
+                <div class="slide-content">
+                    <h1 class="slide-title">Summer Collection</h1>
+                    <p class="slide-text">New arrivals for the sunny season</p>
+                    <a href="products.html" class="btn btn-gold ripple">Explore</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/hero-3.jpg');">
+                <div class="slide-content">
+                    <h1 class="slide-title">Diamond Dreams</h1>
+                    <p class="slide-text">Sparkle with our premium diamond selection</p>
+                    <a href="products.html" class="btn btn-gold ripple">View Collection</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="slider-btn active"></button>
+            <button class="slider-btn"></button>
+            <button class="slider-btn"></button>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-collections">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="images/collections/rings.jpg" alt="Rings Collection" class="zoom-effect">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Signature Rings</h3>
+                        <p>Elegant rings for every occasion</p>
+                        <a href="products.html?category=rings" class="btn btn-outline-gold">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="images/collections/necklaces.jpg" alt="Necklaces Collection" class="zoom-effect">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Luxury Necklaces</h3>
+                        <p>Statement pieces that captivate</p>
+                        <a href="products.html?category=necklaces" class="btn btn-outline-gold">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-card fade-in">
+                    <div class="collection-img">
+                        <img src="images/collections/earrings.jpg" alt="Earrings Collection" class="zoom-effect">
+                    </div>
+                    <div class="collection-info">
+                        <h3>Charming Earrings</h3>
+                        <p>Delicate designs for every style</p>
+                        <a href="products.html?category=earrings" class="btn btn-outline-gold">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content glassmorphism">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The quality of jewelry from ElegantSparkle is unmatched. My necklace arrived beautifully packaged and gets compliments every time I wear it."</p>
+                        <div class="client-info">
+                            <img src="images/clients/client1.jpg" alt="Sarah Johnson">
+                            <h4>Sarah Johnson</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content glassmorphism">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"I purchased engagement rings for my daughter and son-in-law. The craftsmanship is exquisite and the customer service was exceptional."</p>
+                        <div class="client-info">
+                            <img src="images/clients/client2.jpg" alt="Michael Brown">
+                            <h4>Michael Brown</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content glassmorphism">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As a jewelry collector, I'm very particular about quality. ElegantSparkle has become my go-to for unique, high-end pieces that stand out."</p>
+                        <div class="client-info">
+                            <img src="images/clients/client3.jpg" alt="Emma Davis">
+                            <h4>Emma Davis</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content glassmorphism">
+                <h2>Join Our Newsletter</h2>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-gold ripple">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ElegantSparkle</h3>
+                    <p>Luxury jewelry crafted with passion and precision. Timeless pieces for every occasion.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Jewel Street, Luxury District</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@elegantsparkle.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ElegantSparkle. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
